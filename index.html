@@ -2,13 +2,187 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>First Git Project</title>
+    <title>KSB Web Design</title>
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="portfolio.js"></script>
 </head>
 <body>
 
-<h1>Test blah blah blah </h1>
-<h2>Test h2 blah blah blah</h2>
-<h3>Test h3 blah blah blah</h3>
+<!-------------------------------
+Site Name:    Portfolio
+File:         HTML
+Revision:     0.0
+Author:       Kennan Stanley-Bey
+Date:         09-02-18
+Last Update:  11-02-18
+------------------------------->
+
+<!--Navbar-->
+<!--Collapse Button-->
+<nav class="navbar-inverse navbar-default navbar-fixed-top">
+    <div class "container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbutton" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <span class="navbar-brand">KSB Web-Design</span>
+    </div>
+
+    <!--Link Navigation-->
+    <div class="collapse navbar-collapse nav-links" id="navbutton">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a class="scroll-to-section" href="#about">About</a></li>
+            <li><a class="scroll-to-section" href="#portfolio">Portfolio</a></li>
+            <li><a class="scroll-to-section" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+<!--Navbar end-->
+
+<!--Page-one-intro-text-->
+<section id="about">
+    <div class="container  headtxt">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="head1">&lt/About&gt</h1>
+                <p class="par1">Front-End Developer with experience working as both an engineer and as a musician. While musicians strive to express their individuality through music, engineers pursue functionality / practicality through design. My goal is to bring these characteristic together to assist you in building your next website.</p>
+                <p class="par2">“Create your own visual style… let it be unique for yourself and yet identifiable for others.” – Orson Welles
+                </p>
+                <p class="par3">Lets discover your style together!
+                </p>
+
+                <hr class="hr1">
+
+                <p class="skills">Musician - Engineer - Web Designer</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://i.imgur.com/Giw7Lfr.jpg?1" alt="street art pic" class="profilepic">
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section-one-intro-text end-->
+
+<!--Section-two-portfolio   -->
+<section class="portfoliosec" id="portfolio">
+    <div class="container">
+        <h2 class="portfTitle">Portfolio</h2>
+        <hr class="hr2">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="thumbnail">
+                    <img src="https://winston.co.nz/wp-content/uploads/2014/07/website-coming-soon.jpg" alt="Website ref comming soon">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="thumbnail">
+                    <img src="https://winston.co.nz/wp-content/uploads/2014/07/website-coming-soon.jpg" alt="Website ref comming soon">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="thumbnail">
+                    <img src="https://winston.co.nz/wp-content/uploads/2014/07/website-coming-soon.jpg" alt="Website ref comming soon">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="thumbnail">
+                    <img src="https://winston.co.nz/wp-content/uploads/2014/07/website-coming-soon.jpg" alt="Website ref comming soon">
+                </div>
+            </div>
+        </div>
+
+        <div class="row lastRow">
+            <div class="col-lg-6">
+                <div class="thumbnail">
+                    <img src="https://winston.co.nz/wp-content/uploads/2014/07/website-coming-soon.jpg" alt="Website ref comming soon">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="thumbnail">
+                    <img src="https://winston.co.nz/wp-content/uploads/2014/07/website-coming-soon.jpg" alt="Website ref comming soon">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section-two-portfolio end -->
+
+<!--Section-three-contact-->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="contactmTitle">Contact Me</h2>
+                <hr class="hr3">
+                <div class="container center">
+                    <form action="mailto:kstanleybey@yahoo.com" method="post" enctype="text/plain">
+                        <div class="form-group row">
+                            <label for="name">Name:</label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control form-control-lg extend" id="name" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="emailAddress">Email:</label>
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control form-control-sm extend" id="emailAddress" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="subject">Subject:</label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control form-control-sm extend" id="subject" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="message">Message:</label>
+                            <div class="col-sm-12">
+                                <textarea type="text" class="form-control form-control-sm extend" id="message" placeholder="Message" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12 text-center">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section-three-contact end-->
+
+<!--Section-four-social media / footer-->
+<footer>
+    <div class="container" id="topfooter">
+        <div class="row test">
+            <div class="col-lg-6 div1">
+                <h3 class="socialtxt">Lets Connect <i class="far fa-hand-point-right"></i></h3>
+            </div>
+            <div class="col-lg-6 div1">
+                <ul class="sociallinks">
+                    <li><a class="button social" href="https://www.facebook.com/kennan.stanleybey" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a class="button social" href="https://github.com/NefferKSB" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                    <li><a class="button social" href="https://www.freecodecamp.org/nefferksb" target="_blank"><i class="fab fa-free-code-camp"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 </html>
