@@ -6,7 +6,7 @@
 // Last Update:  11-02-18
 
 // Smooth scrolling
-function scrollToSection(event) {
+  function scrollToSection(event) {
   event.preventDefault();
 
   var $section = $($(this).attr("href"));
@@ -19,10 +19,15 @@ function scrollToSection(event) {
   );
 }
 
-$(".scroll-to-section").on("click", scrollToSection);
+  $(".scroll-to-section").on("click", scrollToSection);
 
 // Highlight the top nav as scrolling occurs
-$("body").scrollspy({ target: ".navbar-fixed-top" });
+
+  $("body").scrollspy(
+    {
+      target: ".navbar-fixed-top"
+    }
+  );
 
 $(function() {
   // Close bootstrap's dropdown menu after clicking

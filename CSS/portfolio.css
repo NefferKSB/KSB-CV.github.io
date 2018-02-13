@@ -68,13 +68,14 @@ body {
   margin-top: 1px;
   overflow: hidden;
 }
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active {
+ .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active {
   border: 1px;
   border-radius: 3px;
   margin-left: 3px;
   margin-right: -3px;
   padding-top: .5px;
   overflow: hidden;
+  background-color: black;
 }
 .navbar-inverse .navbar-nav>li>a:focus {
   color: #666633;
