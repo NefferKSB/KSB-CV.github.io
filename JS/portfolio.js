@@ -23,7 +23,7 @@
 
 // Highlight the top nav as scrolling occurs
 
-  $("body").scrollspy(
+  $("#topNav").scrollspy(
     {
       target: ".navbar-fixed-top"
     }
