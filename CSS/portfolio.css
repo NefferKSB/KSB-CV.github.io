@@ -1,11 +1,4 @@
-/*-------------------------------
-Site Name:    Portfolio
-File:         CSS
-Revision:     0.0
-Author:       Kennan Stanley-Bey
-Date:         09-02-18
-Last Update:  11-02-18
--------------------------------*/
+
 body {
   position: relative;
   font-family: 'Ubuntu', sans-serif;
@@ -68,7 +61,7 @@ body {
   margin-top: 1px;
   overflow: hidden;
 }
- .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active {
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active {
   border: 1px;
   border-radius: 3px;
   margin-left: 3px;
@@ -165,14 +158,14 @@ body {
   max-width: 50%;
   margin-bottom: 50px;
 }
-/*Bottom thumbnails spacing*/
-.lastRow {
+/*Contact Me Section*/
+#contact {
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 .contactmTitle {
   font-family: 'Bungee Inline', cursive;
   text-align: center;
-  padding-top: 40px;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
@@ -304,7 +297,7 @@ footer li {
   border: 1px;
   border-radius: 15%;
 }
-.test {
+.media {
   width: 100%;
   padding: 0px;
   margin: 0px;
