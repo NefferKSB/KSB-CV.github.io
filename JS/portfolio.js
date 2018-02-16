@@ -1,5 +1,5 @@
 
- // Smooth scrolling
+// Smooth scrolling
  function scrollToSection(event) {
    event.preventDefault();
 
@@ -12,19 +12,17 @@
      1500
    );
  }
-
  $(".scroll-to-section").on("click", scrollToSection);
 
- // Highlight the top nav as scrolling occurs
+// Highlight the top nav as scrolling occurs
 $("html, body").scrollspy({ target: ".navbar-fixed-top" });
+    $('a').each(function () {
+       $(this).removeClass('active');
+    })
+    $(this).addClass('active');
 
-$('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-
+// Close bootstrap's dropdown menu after clicking
  $(function() {
-   // Close bootstrap's dropdown menu after clicking
    $("div.collapse ul.nav li a").each(function() {
      $(this).on("click", function() {
        var $obj = $($(this).parents(".in")[0]);

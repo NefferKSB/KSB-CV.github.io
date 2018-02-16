@@ -36,6 +36,8 @@ body {
   border-radius: 15px;
   background-color: #c4be91;
   min-height: 80px;
+  margin-top; 1.5px;
+
 }
 /*Navbar links color*/
 .navbar-inverse .navbar-nav li a {
@@ -51,20 +53,16 @@ body {
   background-color: #7a6c6c;
 	-webkit-transition: all 0.5s ease;
   margin-left: 7px;
-  margin-right: -7px;
+  margin-right: -2px;
   border: 1px;
   border-radius: 3px;
-  margin-top: 1px;
+  margin-top: 0px;
   overflow: hidden;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active {
   border: 1px;
   border-radius: 3px;
-  margin-left: 3px;
-  margin-right: -3px;
-  padding-top: .5px;
   overflow: hidden;
-  background-color: black;
 }
 .navbar-inverse .navbar-nav>li>a:focus {
   color: #666633;
@@ -142,6 +140,7 @@ body {
 #portfolio {
   padding-top: 80px;
   margin-top: -80px;
+  padding-bottom: 40px;
 }
 .portfoliosec {
   background-color: #c4be91;
