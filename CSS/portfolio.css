@@ -8,10 +8,6 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
-/*Offset anchor scroll*/
-.scroll-to-section {
-
-}
 /*Brand color*/
 .navbar-inverse .navbar-brand {
   font-family: 'Bungee Inline', cursive;
@@ -87,6 +83,11 @@ body {
   margin-right: 15px;
 }
 /*About section header styling*/
+#about{
+  padding-top: 80px;
+  margin-top: -80px;
+  padding-bottom: 120px;
+}
 .headtxt {
   margin-top: 80px;
 }
@@ -128,7 +129,6 @@ body {
 .skills {
   font-size: 1.41em;
   font-weight: bold;
-  margin-bottom: 40px;
   text-align: center;
   color: white;
 }
@@ -138,6 +138,10 @@ body {
   border-radius: 50%;
   margin: 30px auto 25px auto;
   width: 50%;
+}
+#portfolio {
+  padding-top: 80px;
+  margin-top: -80px;
 }
 .portfoliosec {
   background-color: #c4be91;
@@ -160,8 +164,9 @@ body {
 }
 /*Contact Me Section*/
 #contact {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 100px;
+  margin-top: -80px;
+  padding-bottom: 20px;
 }
 .contactmTitle {
   font-family: 'Bungee Inline', cursive;
