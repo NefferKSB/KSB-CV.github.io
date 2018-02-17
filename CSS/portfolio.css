@@ -7,6 +7,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+  padding-top: 80px;
 }
 /*Brand color*/
 .navbar-inverse .navbar-brand {
@@ -37,7 +38,15 @@ body {
   background-color: #c4be91;
   min-height: 80px;
   margin-top; 1.5px;
-
+}
+header {
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+.nav-up {
+  top: -80px;
 }
 /*Navbar links color*/
 .navbar-inverse .navbar-nav li a {
@@ -294,7 +303,7 @@ footer li {
   margin: 0px;
 }
 .social:hover {
-  color: white;
+  color: white !important;
   background-color: #7a6c6c;
   text-decoration: none;
 	-webkit-transition: all 0.5s ease;
