@@ -2,7 +2,7 @@
 body {
   position: relative;
   font-family: 'Ubuntu', sans-serif;
-  background: #e8d9bd url("//c1.staticflickr.com/5/4614/38496617620_452ea94250_b.jpg") no-repeat center center fixed;
+  background: url("//c1.staticflickr.com/5/4614/38496617620_452ea94250_b.jpg") no-repeat center center fixed #e8d9bd;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -38,8 +38,6 @@ body {
   background-color: #c4be91;
   min-height: 80px;
   margin-top; 1.5px;
-}
-header {
   position: fixed;
   top: 0;
   transition: top 0.2s ease-in-out;

@@ -1,7 +1,7 @@
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
-var navbarHeight = $('nav').outerHeight();
+var navbarHeight = $("navbar-inverse").outerHeight();
 
 $(window).scroll(function(event){
   didScroll = true;
@@ -21,13 +21,13 @@ function hasScrolled() {
    // If current position > last position AND scrolled past navbar...
    if (st > lastScrollTop && st > navbarHeight){
      // Scroll Down
-     $('nav').removeClass('nav-down').addClass('nav-up');
+     $("navbar-inverse").removeClass("nav-down").addClass("nav-up");
    }
    else {
      // Scroll Up
      // If did not scroll past the document (possible on mac)...
      if(st + $(window).height() < $(document).height()) {
-       $('nav').removeClass('nav-up').addClass('nav-down');
+       $("navbar-inverse").removeClass("nav-up").addClass("nav-down");
      }
    }
    lastScrollTop = st;
