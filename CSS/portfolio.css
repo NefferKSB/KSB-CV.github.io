@@ -301,6 +301,9 @@ footer li {
   border: 1px;
   border-radius: 15%;
 }
+.social:visited {
+  color: #666633;
+}
 .media {
   width: 100%;
   padding: 0px;
