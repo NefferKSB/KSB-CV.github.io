@@ -1,38 +1,33 @@
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $("navbar-inverse").outerHeight();
+var scrollTimeOut = true,
+    lastYPos = 0,
+    yPos = 0,
+    yPosDelta = 5,
+    nav = $('nav.navbar'),
+    navHeight = nav.outerHeight(),
+    setNavClass = function() {
+        scrollTimeOut = false;
+        yPos = $(window).scrollTop();
 
-$(window).scroll(function(event){
-  didScroll = true;
+        if(Math.abs(lastYPos - yPos) >= yPosDelta) {
+            if (yPos > lastYPos && yPos > navHeight){
+                nav.addClass('hide-nav');
+            } else {
+                nav.removeClass('hide-nav');
+            }
+            lastYPos = yPos;
+        }
+    };
+
+$(window).scroll(function(e){
+    scrollTimeOut = true;
 });
 
 setInterval(function() {
-  if (didScroll) {
-    hasScrolled();
-    didScroll = false;
-  }
+    if (scrollTimeOut) {
+        setNavClass();
+    }
+
 }, 250);
-
-function hasScrolled() {
-   var st = $(this).scrollTop();
-   if (Math.abs(lastScrollTop — st) <= delta)
-     return;
-   // If current position > last position AND scrolled past navbar...
-   if (st > lastScrollTop && st > navbarHeight){
-     // Scroll Down
-     $("navbar-inverse").removeClass("nav-down").addClass("nav-up");
-   }
-   else {
-     // Scroll Up
-     // If did not scroll past the document (possible on mac)...
-     if(st + $(window).height() < $(document).height()) {
-       $("navbar-inverse").removeClass("nav-up").addClass("nav-down");
-     }
-   }
-   lastScrollTop = st;
-}
-
 
 // Smooth scrolling
 function scrollToSection(event) {

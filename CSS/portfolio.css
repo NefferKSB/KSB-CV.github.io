@@ -40,11 +40,15 @@ body {
   margin-top; 1.5px;
   position: fixed;
   top: 0;
-  transition: top 0.2s ease-in-out;
-  width: 100%;
+  -webkit-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      overflow: hidden;
 }
-.nav-up {
-  top: -80px;
+.navbar.hide-nav {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
 }
 /*Navbar links color*/
 .navbar-inverse .navbar-nav li a {
