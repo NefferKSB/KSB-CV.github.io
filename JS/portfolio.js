@@ -43,12 +43,12 @@ function scrollToSection(event) {
 $(".scroll-to-section").on("click", scrollToSection);
 
 // Highlight the top nav as scrolling occurs
-$("html, body").scrollspy({ target: ".navbar-fixed-top" });
+/*$("html, body").scrollspy({ target: ".navbar-fixed-top" });
     $('a').each(function () {
        $(this).removeClass('active');
     })
     $(this).addClass('active');
-
+    */
 // Close bootstrap's dropdown menu after clicking
 $(function() {
     $("div.collapse ul.nav li a").each(function() {
