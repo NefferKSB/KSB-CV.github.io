@@ -1,3 +1,4 @@
+// vanishing navbar
 var scrollTimeOut = true,
     lastYPos = 0,
     yPos = 0,
@@ -42,13 +43,6 @@ function scrollToSection(event) {
 }
 $(".scroll-to-section").on("click", scrollToSection);
 
-/* Highlight the top nav as scrolling occurs
-    $("html, body").scrollspy({ target: ".navbar-fixed-top" });
-    $('a').each(function () {
-       $(this).removeClass('active');
-    });
-    $(this).addClass('active');*/
-
 
 // Close bootstrap's dropdown menu after clicking
 $(function() {
@@ -60,4 +54,13 @@ $(function() {
           });
        });
     });
+});
+
+// Removes CSS :focus selector when link is clicked
+$(".navbar-inverse .navbar-nav>li>a").on("click", function() {
+  $(this).blur();
+})
+var site = document.getElementsByClass("site");
+site.addEventListener("mouseover", function() {
+  $(this).fadeTo(200, 1);
 });
