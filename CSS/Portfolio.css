@@ -8,7 +8,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
-  background: #e8d9bd url("//c1.staticflickr.com/1/794/40090836935_56bf009c29_b.jpg") no-repeat center;
+  background: #e8d9bd url("//c1.staticflickr.com/1/794/40090836935_56bf009c29_b.jpg") no-repeat center !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -25,7 +25,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
-  background: #e8d9bd url("//c1.staticflickr.com/1/783/40983913401_fd0315cd7b_b.jpg") no-repeat center fixed;
+  background: #e8d9bd url("//c1.staticflickr.com/1/783/40983913401_fd0315cd7b_b.jpg") no-repeat center fixed !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
