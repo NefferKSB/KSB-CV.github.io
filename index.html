@@ -9,174 +9,84 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-    <link rel="stylesheet" type="text/css" href="CSS/Portfolio.css">
+    <link rel="stylesheet" type="text/css" href="CSS/CtrlShiftEventsPage.css">
 </head>
 <body>
 <!-- Top -->
-
-<div class="wrapper">
-    <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+<header id="top_header">
+    <!-- Navbar Collapse Button -->
+    <nav class="navbar navbar-default navStyle">
+        <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbutton" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navButton" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <span class="navbar-brand">KSB Web-Design</span>
+                <img src="http://www.ctrlshift.org/wp-content/uploads/2017/10/cropped-white_logo_transparent_background.png" alt="CtrlShift">
             </div>
+            <!-- Navbar Collapse Button End -->
 
-            <!--Link Navigation-->
-            <div class="collapse navbar-collapse nav-links" id="navbutton">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="scroll-to-section" href="#about">About</a></li>
-                    <li><a class="scroll-to-section" href="#portfolio">Portfolio</a></li>
-                    <li><a class="scroll-to-section" href="#contact">Contact</a></li>
+            <!--Navbar Link Navigation-->
+            <div class="collapse navbar-collapse" id="navButton">
+                <ul class="nav navbar-nav navbar-right" id="scroll">
+                    <li class="centering"><a href="https://s.codepen.io/Nannek/debug/JpZxop/jVApogBzgwnr" >Home</a></li>
+                    <li class="centering"><a href="#meetTheTeam">When & Where</a></li>
+                    <li href="#" class="dropdown centering">
+                        <a class="dropdown-toggle" href="#language" id="navbarDropdownMenuLink" data-toggle="dropdown" title="">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#"><img src="http://www.ctrlshift.org/wp-content/plugins/qtranslate-x/flags/nl.png" alt="Nederlands"> Nederlands</a></li>
+                            <li><a href="#"><img src="http://www.ctrlshift.org/wp-content/plugins/qtranslate-x/flags/fr.png" alt="Français"> Français</a></li>
+                            <li><a href="#"><img src="http://www.ctrlshift.org/wp-content/plugins/qtranslate-x/flags/gb.png" alt="English"> English </a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
+            <!-- Navbar Link Navigation End -->
         </div>
     </nav>
-    <!--Navbar end-->
+    <!-- Navbar End -->
 
-    <!--Page-one-intro-text-->
-    <section id="about">
+    <div class="wrapper">
+        <div class="calendar">
+            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=rjm3qsnc0uv7cgpmv8236nikc4%40group.calendar.google.com&amp;color=%23853104&amp;ctz=Europe%2FBrussels" style="border-width:0" width="800px" height="500px" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="responsive-iframe-container">
+            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=rjm3qsnc0uv7cgpmv8236nikc4%40group.calendar.google.com&amp;color=%23853104&amp;ctz=Europe%2FBrussels" style="border-width:0" width="80%" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+</header>
+
+<section id="whenWhere">
+    <div class="container">
+        <div class="whenWhereTitle">
+            <h1>When & Where</h1>
+        </div>
+        <div class="whenWhereTxt">
+            <p class="par">
+                The CtrlShift group has weekly meetings every Thursday from 5pm to 8pm. Can't make it at 5pm, can't stay till 8pm? No problem! Everyone is welcome to come and go as they please. Please be sure to check the meeting location shown in the calendar as meeting locations can change week to week. We hope to see you soon!
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="bottom_footer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1 class="head1">&lt/About&gt</h1>
-                    <p class="par1">Front-End Developer with experience working as both an engineer and as a musician. While musicians strive to express their individuality through music, engineers pursue functionality / practicality through design. My goal is to bring these characteristic together to assist you in building your next website.</p>
-                    <p class="par2">“Create your own visual style… let it be unique for yourself and yet identifiable for others.” – Orson Welles
-                    </p>
-                    <p class="par3">Lets discover your style together!
-                    </p>
-
-                    <hr class="hr1">
-
-                    <p class="skills">Musician - Engineer - Web Developer</p>
-                </div>
-                <div class="col-lg-6 pic">
-                    <img src="//c1.staticflickr.com/5/4674/39594340324_75be8a3991_z.jpg" alt="" class="profilepic">
-                </div>
-            </div>
+            <p>CtrlShift</p>
         </div>
-    </section>
-    <!--Section-one-intro-text end-->
-
-    <!--Section-two-portfolio   -->
-    <section class="portfoliosec" id="portfolio">
-        <div class="container">
-            <h2 class="portfTitle">Portfolio</h2>
-            <hr class="hr2">
-
-            <div class="row">
-                <div class="col-lg-6 site">
-                    <a href="https://nefferksb.github.io/CtrlShift.github.io/"><img src="//c1.staticflickr.com/1/804/25954429617_96b7d8b24d_b.jpg" alt="Ctrl Shift"></a>
-                </div>
-                <div class="col-lg-6 site">
-                    <a href="https://nefferksb.github.io/RandonQuoteGen.github.io/"><img src="//c1.staticflickr.com/1/795/40937847391_de6df9467c_b.jpg" alt="Random Quote Generator"></a>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="thumbnail">
-                        <img src="https://winston.co.nz/wp-content/uploads/2014/07/website-coming-soon.jpg" alt="Website ref comming soon">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="thumbnail">
-                        <img src="https://winston.co.nz/wp-content/uploads/2014/07/website-coming-soon.jpg" alt="Website ref comming soon">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row lastRow">
-                <div class="col-lg-6">
-                    <div class="thumbnail">
-                        <img src="https://winston.co.nz/wp-content/uploads/2014/07/website-coming-soon.jpg" alt="Website ref comming soon">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="thumbnail">
-                        <img src="https://winston.co.nz/wp-content/uploads/2014/07/website-coming-soon.jpg" alt="Website ref comming soon">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Section-two-portfolio end -->
-
-    <!--Section-three-contact-->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="contactmTitle">Contact Me</h2>
-                    <hr class="hr3">
-                    <div class="container center">
-                        <form action="mailto:kstanleybey@yahoo.com" method="post" enctype="text/plain">
-                            <div class="form-group row">
-                                <label for="name">Name:</label>
-                                <div class="col-sm-12">
-                                    <input type="text" class="form-control form-control-lg extend" id="name" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="emailAddress">Email:</label>
-                                <div class="col-sm-12">
-                                    <input type="email" class="form-control form-control-sm extend" id="emailAddress" placeholder="Email Address">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="subject">Subject:</label>
-                                <div class="col-sm-12">
-                                    <input type="text" class="form-control form-control-sm extend" id="subject" placeholder="Subject">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="message">Message:</label>
-                                <div class="col-sm-12">
-                                    <textarea class="form-control form-control-sm extend" id="message" placeholder="Message" rows="5"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-12 text-center">
-                                    <button type="submit" class="btn btn-default">Submit</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Section-three-contact end-->
-
-    <!--Section-four-social media / footer-->
-    <footer>
-        <div class="container" id="topfooter">
-            <div class="row media">
-                <div class="col-lg-6 div1">
-                    <h3 class="socialtxt">Lets Connect <i class="far fa-hand-point-right"></i></h3>
-                </div>
-                <div class="col-lg-6 div1">
-                    <ul class="sociallinks">
-                        <li><a class="button social" href="https://www.facebook.com/kennan.stanleybey" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a class="button social" href="https://github.com/NefferKSB" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                        <li><a class="button social" href="https://www.freecodecamp.org/nefferksb" target="_blank"><i class="fab fa-free-code-camp"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div>
+    </div>
+</footer>
 <!-- Footer End -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="JS/Portfolio.js"></script>
+<script src="JS/CtrlShiftEventsPage.js"></script>
 
 </body>
 </html>
