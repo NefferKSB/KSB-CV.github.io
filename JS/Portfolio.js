@@ -61,7 +61,15 @@ setInterval(function() {
 $(".navbar-inverse .navbar-nav>li>a").on("click", function() {
   $(this).blur();
 })
-var site = document.getElementsByClass("site");
-site.addEventListener("mouseover", function() {
-  $(this).fadeTo(200, 1);
-});
+
+// Highlight site links
+var sites = document.getElementsByClassName("siteHover");
+
+for (var i = 0; i < sites.length; i++) {
+  sites[i].addEventListener("mouseover", function() {
+    $(this).fadeTo(200, .8);
+  });
+  sites[i].addEventListener("mouseout", function() {
+    $(this).fadeTo(200, 1);
+  });
+}
