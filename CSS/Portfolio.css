@@ -162,12 +162,23 @@ body {
   text-align: center;
   color: white;
 }
+@media screen and (min-width: 1200px) {
 .profilepic {
   display: block;
   border: 2px solid #666633;
   border-radius: 10%;
   margin: 30px auto 25px auto;
-  width: 35%;
+  width: 60%;
+}
+}
+@media screen and (max-width: 1200px) {
+.profilepic {
+  display: block;
+  border: 2px solid #666633;
+  border-radius: 10%;
+  margin: 30px auto 25px auto;
+  width: 40%;
+}
 }
 #portfolio {
   padding-bottom: 40px;
