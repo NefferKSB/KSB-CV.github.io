@@ -156,7 +156,7 @@ blank.draw();
 var Bootstrap = new Piechart({
 	canvas: skillD,
 	data: skillLevelD,
-	colors: ["#00264D", ],
+	colors: ["#00264D"],
 	doughnutHoleSize: 0.75
 });
 Bootstrap.draw();
