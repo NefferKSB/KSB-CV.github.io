@@ -125,20 +125,23 @@ canvas {
 #experience,
 #education,
 #projects,
-#language {
+#language,
+#certificate {
 	background-color: #00264D;
 }
 #experience .row .col-8,
 #education .row .col-8,
 #projects .row .col-8,
-#language .row .col-8 {
+#language .row .col-8,
+#certificate .row .col-8 {
 	flex: 0 0 66.66%;
 	max-width: 66.66%;
 }
 #experience .row h3,
 #education .row h3,
 #projects .row h3,
-#language .row h3 {
+#language .row h3,
+#certificate .row h3 {
 	margin-bottom: 20px;
 	background-color: #FAFAFA;
 	color: #00264D;
@@ -148,24 +151,28 @@ canvas {
 #experience .row ul,
 #education .row ul,
 #projects .row ul,
-#language .row ul {
+#language .row ul,
+#certificate .row ul {
 	color: #FAFAFA;
 }
 #experience .row ul li,
 #education .row ul li,
 #projects .row ul li,
-#language .row ul li {
+#language .row ul li,
+#certificate .row ul li {
 	font-size: .78em;
 	font-weight: bold;
 }
 #experience .row ul p,
 #education .row ul p,
 #projects .row ul p,
-#language .row ul p {
+#language .row ul p,
+#certificate .row ul p {
 	padding-top: 8px;
 	font-size: .75em;
 }
-#language {
+#language,
+#certificate {
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
@@ -239,7 +246,7 @@ canvas {
 }
 @media print {
 	.profile {
-		height: 150px;
+		height: 200px;
 	}
 }
 @media print {
